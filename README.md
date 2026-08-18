@@ -36,10 +36,6 @@
   <strong>Django REST Framework backend</strong>.
 </p>
 
-<div align="center">
-  <img src="assets/icons/shake_hands.png" alt="KanMind Collaboration" width="260">
-</div>
-
 <h2>Features</h2>
 
 <table>
