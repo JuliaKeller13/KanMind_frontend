@@ -1,17 +1,17 @@
 <div align="center">
 
-# KanMind Frontend
+<img src="assets/icons/logo_icon.svg" alt="KanMind Logo" width="90">
 
-### Frontend for the KanMind task management application
+<h1>KanMind Frontend</h1>
 
 <p>
-  Vanilla JavaScript frontend connected to my
-  <strong>Django REST API backend</strong>.
+  Frontend for the KanMind task management application,<br>
+  connected to my Django REST API backend.
 </p>
 
 <p>
   <a href="https://github.com/JuliaKeller13/Kanmind_backend">
-    Backend Repository
+    <strong>Backend Repository</strong>
   </a>
   &nbsp;•&nbsp;
   <a href="https://github.com/Developer-Akademie-Backendkurs/project.KanMind">
@@ -30,58 +30,61 @@
 </p>
 
 <p>
-  This frontend was originally provided by
+  The frontend was originally provided by
   <strong>Developer Akademie</strong> as part of the Backend Developer curriculum.
-  I forked and adapted it to work with my own Django REST Framework backend implementation.
+  I forked and adapted it for integration with my own
+  <strong>Django REST Framework backend</strong>.
 </p>
 
-<p>
-  The application supports user authentication, boards, tasks, assignments,
-  reviews and task comments.
-</p>
+<div align="center">
+  <img src="assets/icons/shake_hands.png" alt="KanMind Collaboration" width="260">
+</div>
+
+<h2>Features</h2>
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <img src="assets/icons/login_icon.svg" width="32"><br>
+      <strong>Authentication</strong><br>
+      Login, registration and guest access
+    </td>
+    <td align="center" width="25%">
+      <img src="assets/icons/view_board_yellow.svg" width="32"><br>
+      <strong>Boards</strong><br>
+      Collaborative board management
+    </td>
+    <td align="center" width="25%">
+      <img src="assets/icons/ticket_icon.svg" width="32"><br>
+      <strong>Tasks</strong><br>
+      Assignments, priorities and reviews
+    </td>
+    <td align="center" width="25%">
+      <img src="assets/icons/comment_bubble_filled.svg" width="32"><br>
+      <strong>Comments</strong><br>
+      Task-based communication
+    </td>
+  </tr>
+</table>
 
 <h2>My Adjustments</h2>
 
 <ul>
-  <li>Connected the frontend to my KanMind backend API</li>
-  <li>Configured the guest login for local testing</li>
-  <li>Adapted the legal notice and privacy policy</li>
-  <li>Used the frontend to test the complete backend integration</li>
+  <li>Connected the frontend to my KanMind Django backend</li>
+  <li>Configured guest login for testing</li>
+  <li>Adapted privacy policy and legal notice</li>
+  <li>Used the frontend for complete API integration testing</li>
 </ul>
 
 <h2>Tech Stack</h2>
 
 <p>
-  HTML5 • CSS3 • Vanilla JavaScript
-</p>
-
-<h2>Backend</h2>
-
-<p>
-  The corresponding backend was implemented by me with
-  <strong>Django</strong> and <strong>Django REST Framework</strong>.
-</p>
-
-<p>
-  <strong>Backend repository:</strong><br>
-  <a href="https://github.com/JuliaKeller13/Kanmind_backend">
-    github.com/JuliaKeller13/Kanmind_backend
-  </a>
-</p>
-
-<p>
-  For local development, the frontend connects to:
-</p>
-
-<pre><code>http://127.0.0.1:8000/api/</code></pre>
-
-<p>
-  Start the backend before launching the frontend.
+  HTML5 &nbsp;•&nbsp; CSS3 &nbsp;•&nbsp; Vanilla JavaScript
 </p>
 
 <h2>Run Locally</h2>
 
-<h3>1. Clone the repository</h3>
+<h3>1. Clone the frontend</h3>
 
 <pre><code>git clone https://github.com/JuliaKeller13/KanMind_frontend.git
 cd KanMind_frontend</code></pre>
@@ -89,14 +92,10 @@ cd KanMind_frontend</code></pre>
 <h3>2. Start the backend</h3>
 
 <p>
-  Follow the setup instructions in the
+  Follow the setup instructions in my
   <a href="https://github.com/JuliaKeller13/Kanmind_backend">
-    backend repository
+    KanMind Backend repository
   </a>.
-</p>
-
-<p>
-  The Django development server should run at:
 </p>
 
 <pre><code>http://127.0.0.1:8000/</code></pre>
@@ -104,25 +103,44 @@ cd KanMind_frontend</code></pre>
 <h3>3. Start the frontend</h3>
 
 <p>
-  Open the project in Visual Studio Code and start the root
+  Open the project in Visual Studio Code and launch the root
   <code>index.html</code> with <strong>Live Server</strong>.
-</p>
-
-<p>
-  The frontend is configured for:
 </p>
 
 <pre><code>http://127.0.0.1:5500/</code></pre>
 
+<h2>API Connection</h2>
+
+<p>The frontend connects locally to:</p>
+
+<pre><code>const API_BASE_URL = 'http://127.0.0.1:8000/api/';</code></pre>
+
+<p>
+  Authentication is handled by the corresponding Django REST API.
+</p>
+
 <h2>Guest Login</h2>
 
 <p>
-  A guest login is available for testing the application without creating
-  a personal account.
+  A dedicated guest account is available for demonstration and testing.
 </p>
 
 <p>
-  The guest account is intended for demonstration and local testing only.
+  The guest account contains no administrative privileges and is intended
+  only for testing the application.
+</p>
+
+<h2>Backend</h2>
+
+<p>
+  The backend was implemented by me using
+  <strong>Python, Django and Django REST Framework</strong>.
+</p>
+
+<p>
+  <a href="https://github.com/JuliaKeller13/Kanmind_backend">
+    github.com/JuliaKeller13/Kanmind_backend
+  </a>
 </p>
 
 <h2>Project Context</h2>
@@ -134,7 +152,7 @@ cd KanMind_frontend</code></pre>
 
 <p>
   The original frontend was provided by Developer Akademie so that students
-  could implement and integrate their own backend API.
+  could implement and connect their own backend API.
 </p>
 
 <p>
@@ -146,9 +164,9 @@ cd KanMind_frontend</code></pre>
 
 <p>
   This repository is my adapted frontend fork.
-  My main implementation work for this project is contained in the
+  My main implementation work is contained in the
   <a href="https://github.com/JuliaKeller13/Kanmind_backend">
-    KanMind Backend repository
+    backend repository
   </a>.
 </p>
 
@@ -156,20 +174,14 @@ cd KanMind_frontend</code></pre>
 
 <div align="center">
 
-<h2>Author</h2>
+<img src="assets/icons/logo_icon.svg" alt="KanMind Logo" width="55">
+
+<h3>Julia Keller</h3>
 
 <p>
-  <strong>Julia Keller</strong>
-</p>
-
-<p>
-  <a href="https://github.com/JuliaKeller13">
-    GitHub Profile
-  </a>
+  <a href="https://github.com/JuliaKeller13">GitHub</a>
   &nbsp;•&nbsp;
-  <a href="https://github.com/JuliaKeller13/Kanmind_backend">
-    Backend
-  </a>
+  <a href="https://github.com/JuliaKeller13/Kanmind_backend">Backend</a>
 </p>
 
 <p>
